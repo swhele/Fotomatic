@@ -8,6 +8,7 @@ html {
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
+
 }
 
 .center {
@@ -39,6 +40,7 @@ html {
 header {
   position: fixed;
   width: 100%;
+  height: 85px;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
   z-index: 2;
@@ -118,7 +120,16 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+
 }
+
+/*.banner {
+  display: flex;
+  background-image: url(./resources/images/banner-landingpage.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}*/
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
@@ -267,11 +278,17 @@ header .mobile {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
+  .feature img {
+    height: 65px;
+    width: 90px;
+  }
 }
 
 /* Filters Section */
 
 #filters-section {
+  display: block;
   padding: 4rem 0;
   background-color: #4a4a4a;
 }
@@ -295,8 +312,24 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
+  justify-content: flex-start;
   max-width: 100%;
   padding: 0 1%;
+}
+
+#filters-section .image-container {
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 }
 
 @media only screen and (max-width: 760px) {
